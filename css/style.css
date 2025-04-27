@@ -414,6 +414,27 @@
     background-color: var(--emerald);
   }
 
+  .btn-subscribe {
+    width: 165px;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    justify-items:  center;
+    line-height: 24px;
+    padding: 8px 24px;
+    background-color: var(--blue);
+    color: var(--white);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+  }
+  .subscribe-svg {
+    fill: var(--white);
+    margin-left: 16px;
+
+  }
+
   /*modal*/
   .modal-overlay {
     position: fixed;
