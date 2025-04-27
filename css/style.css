@@ -528,15 +528,8 @@
   transform: translateY(-50%);
   pointer-events: none;
 
-
-
 }
-  .input-icon-first {
-    border-right: 1px solid var(--grey);
-    padding-left: 4px;
-    height: auto;
 
-  }
 
   .btn-form {
     background-color: var(--blue);
