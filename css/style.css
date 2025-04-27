@@ -500,6 +500,7 @@
   }
   .input-modal {
     height: 40px;
+    padding-left: 32px;
     width: 100%;
     border: 1px solid var(--grey-opacity-40);
     border-radius: 4px;
@@ -508,6 +509,19 @@
     outline: none;
     border-color: var(--blue);
   }
+  .input-wrapper {
+    position: relative;
+    width: 100%;
+  }
+.input-icon {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  pointer-events: none;
+
+}
+
   .btn-form {
     background-color: var(--blue);
     padding: 16px 32px;
