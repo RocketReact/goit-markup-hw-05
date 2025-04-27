@@ -542,11 +542,12 @@
 
   .checkbox-label {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     font-size: 12px;
     gap: 8px;
-    color: var(--grey-middle)
+    color: var(--grey-middle);
+    width: 360px;
 
   }
   .checkbox-input {
