@@ -455,7 +455,7 @@
     display: flex;
     flex-direction: column;
     width: 408px;
-    min-height: 584px;
+    height: 584px;
     top: 80px;
     left: 516px;
     background-color:  var(--white-light);
@@ -467,7 +467,7 @@
             0 2px 1px 0 var(--grey-opacity-20);
     justify-content: center;
     align-items: center;
-    gap: 8px;
+
   }
   .modal-overlay.is-open {
     opacity: 1;
@@ -501,7 +501,7 @@
 
   }
   .textarea-modal {
-
+    max-height: 120px;
   }
   .textarea-modal::placeholder {
     color: var(--grey-opacity-40);
@@ -528,7 +528,15 @@
   transform: translateY(-50%);
   pointer-events: none;
 
+
+
 }
+  .input-icon-first {
+    border-right: 1px solid var(--grey);
+    padding-left: 4px;
+    height: auto;
+
+  }
 
   .btn-form {
     background-color: var(--blue);
