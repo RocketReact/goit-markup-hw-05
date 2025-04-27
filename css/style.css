@@ -467,6 +467,7 @@
             0 2px 1px 0 var(--grey-opacity-20);
     justify-content: center;
     align-items: center;
+    gap: 8px;
   }
   .modal-overlay.is-open {
     opacity: 1;
@@ -484,7 +485,14 @@
   .input-label {
     display: flex;
     flex-direction: column;
+  }
+  .input-label-title {
+
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
     color: var(--middle-grey);
+    margin-bottom: 4px;
   }
 
   .modal-title {

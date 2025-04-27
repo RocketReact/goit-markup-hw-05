@@ -486,7 +486,7 @@
         </label>
         <div class="inputs">
           <label class="input-label">
-            Name
+            <span class="input-label-title">Name</span>
             <div class="input-wrapper">
             <input
                     name="username"
@@ -501,26 +501,37 @@
           </label>
 
           <label class="input-label">
-            Phone
+            <span class="input-label-title">Phone</span>
+            <div class="input-wrapper">
             <input
                     name="phone_number"
                     type="tel"
                     class="input-modal"
                     required />
+            <svg class='input-icon' width="13" height="13">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+            </div>
           </label>
 
           <label class="input-label">
-            Email
-            <input
-                    name="email"
-                    type="email"
-                    class="input-modal"
-                    required />
+            <span class="input-label-title">Email</span>
+            <div class="input-wrapper">
+              <input
+                      name="email"
+                      type="email"
+                      class="input-modal"
+                      required />
+              <svg class='input-icon' width="15" height="12">
+                <use href="./images/icons.svg#icon-mail"></use>
+              </svg>
+            </div>
+
           </label>
 
           <label class="input-label">
-            Comment
-            <textarea class="textarea-modal" placeholder="Text input" rows="5" name="comment"></textarea>
+            <span class="input-label-title">Comment</span>
+            <textarea class="textarea-modal" placeholder="Text input" rows="6" name="comment"></textarea>
           </label>
         </div>
         <label class="checkbox-label">
