@@ -477,28 +477,35 @@
         <div class="inputs">
           <label class="input-label">
             Name
-            <input type="text" />
+            <input
+                    name="username"
+                    type="text"
+                    class="input-modal"
+                    required
+                    autofocus />
           </label>
 
           <label class="input-label">
             Phone
-            <input type="text" />
+            <input
+                    name="phone_number"
+                    type="tel"
+                    class="input-modal"
+                    required />
           </label>
 
           <label class="input-label">
             Email
-            <input type="text" />
+            <input
+                    name="email"
+                    type="email"
+                    class="input-modal"
+                    required />
           </label>
 
           <label class="input-label">
             Comment
-            <textarea
-              class="textarea-modal"
-              placeholder="Text input"
-              rows="5"
-              name="comment"
-            >
-            </textarea>
+            <textarea class="textarea-modal" placeholder="Text input" rows="5" name="comment"></textarea>
           </label>
         </div>
         <label class="checkbox-label">
