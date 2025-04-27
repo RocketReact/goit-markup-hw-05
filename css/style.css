@@ -12,16 +12,23 @@ body {
 
 :root {
   --white: #ffffff;
+  --white-light: #FCFCFC;
   --lightest-blue: #f4f4fd;
   --blue: #4d5ae5;
   --dark-light-blue: #404bbf;
   --dark-blue: #2e2f42;
   --lightest-dark-blue: #434455;
-  --middle-grey: #8e8f99;
+  --middle-grey: #8E8F99;
   --black: #000000;
   --grey-ligtest: #2e2f4214;
-  --grey-light: #2e2f4229;
+  --grey: #2E2F42;
+  --grey-opacity-40: #2E2F4266;
+  --grey-opacity-14: #00000024;
+  --grey-opacity-15: #00000026;
+  --grey-opacity-12: #0000001F;
+  --grey-opacity-20: #00000033;
   --emerald: #31d0aa;
+
 }
 h1,
 h2,
@@ -299,7 +306,7 @@ img {
   border-radius: 0 0 4px 4px;
   box-shadow:
     0 2px 1px 0 var(--grey-ligtest),
-    0 1px 1px 0 var(--grey-light),
+    0 1px 1px 0 var(--grey-ligtest),
     0 1px 6px 0 var(--grey-ligtest);
   justify-items: center;
   align-items: center;
@@ -323,7 +330,7 @@ img {
 .portfolio-li:hover {
   box-shadow:
     0 2px 1px 0 var(--grey-ligtest),
-    0 1px 1px 0 var(--grey-light),
+    0 1px 1px 0 var(--grey-ligtest),
     0 1px 6px 0 var(--grey-ligtest);
 }
 .portfolio-li:hover .paragraph-img {
@@ -403,4 +410,80 @@ img {
 .icons-hover-emerald:hover,
 .icons-hover-emerald:focus {
   background-color: var(--emerald);
+}
+
+/*modal*/
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background-color: var(--grey);
+  /*opacity: 0;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*visibility: hidden;*/
+  transition:
+          opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+          visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal {
+  display: flex;
+  flex-direction: column;
+  width: 408px;
+  height: auto;
+  background-color:  var(--white-light);
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow:
+          0 1px 1px 0 var(--grey-opacity-14),
+          0 1px 3px 0 var(--grey-opacity-12),
+          0 2px 1px 0 var(--grey-opacity-20);
+  justify-content: center;
+  align-items: center;
+}
+.modal-overlay.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+.inputs{
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  gap: 8px;
+  border-radius: 4px;
+  margin: 16px 24px;
+
+}
+.input-label {
+  display: flex;
+  flex-direction: column;
+  color: var(--middle-grey);
+}
+.modal-title {
+  padding: 72px 24px 0 24px;
+}
+.textarea-modal {
+
+}
+.textarea-modal::placeholder {
+  color: var(--grey-opacity-40);
+  opacity: 1;
+}
+.btn-form {
+  background-color: var(--blue);
+  padding: 16px 32px;
+  border: none;
+  box-shadow: 0 4px 4px 0 var(--grey-opacity-15);
+  border-radius: 4px;
+  margin: 24px auto;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  color: var(--white);
+  min-width: 169px;
+
 }
