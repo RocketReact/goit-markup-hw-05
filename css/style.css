@@ -27,6 +27,7 @@ body {
   --grey-opacity-15: #00000026;
   --grey-opacity-12: #0000001F;
   --grey-opacity-20: #00000033;
+  --grey-middle: #757575;
   --emerald: #31d0aa;
 
 }
@@ -486,4 +487,22 @@ img {
   color: var(--white);
   min-width: 169px;
 
+}
+
+.checkbox-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  gap: 8px;
+  color: var(--grey-middle)
+
+}
+.checkbox-input {
+  color: var(--grey-opacity-40);
+}
+
+.privacy-policy-link {
+  text-decoration: underline solid var(--blue);
+  color: var(--blue);
 }
