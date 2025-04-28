@@ -431,8 +431,6 @@ img {
   display: flex;
   gap: 24px;
 }
-
-
 .subscribe-input {
   width: 264px;
   height: 40px;
@@ -482,7 +480,7 @@ img {
   width: 100%;
   height: 100%;
   z-index: 999;
-  background-color: var(--grey);
+  background-color: var(--grey-opacity-40);
   opacity: 0;
     visibility: hidden;
   display: flex;
