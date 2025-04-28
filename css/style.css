@@ -419,6 +419,12 @@ img {
   margin-left: 80px;
   gap: 24px;
 }
+.subscribe-label {
+  display: flex;
+  flex-direction: column;
+  color: var(--white);
+  margin-bottom: 25px;
+}
 .subscribe-input {
   margin-top: 16px;
   width: 264px;
@@ -429,17 +435,12 @@ img {
   box-shadow: 0 4px 4px 0 var(--grey-opacity-15);
 }
 .subscribe-input::placeholder {
+  font-family: Roboto, serif;
   color: var(--white);
   font-size: 12px;
   line-height: 1.5;
-  letter-spacing: 4px;
+  letter-spacing: 0.02em;
   padding: 8px 0 8px 16px;
-}
-.subscribe-label {
-  display: flex;
-  flex-direction: column;
-  color: var(--white);
-  margin-bottom: 25px;
 }
 .btn-subscribe {
   width: 165px;
