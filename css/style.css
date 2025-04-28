@@ -585,7 +585,7 @@ img {
 }
 .input-modal:active,
 .input-modal:focus {
-  border-color: var(--dark-light-blue);
+  border-color: var(--blue);
 }
 .input-modal:focus .input-icon {
   fill: var(--blue);
