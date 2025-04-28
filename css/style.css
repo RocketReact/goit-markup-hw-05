@@ -414,11 +414,40 @@
     background-color: var(--emerald);
   }
 
+  .subscribe {
+    display: flex;
+    align-items: center;
+    margin-left: 80px;
+    gap: 24px;
+  }
+  .subscribe-input {
+    margin-top: 16px;
+    width: 264px;
+    height: 40px;
+    background-color: var(--grey);
+    border: 1px solid var(--white);
+    border-radius: 4px;
+    box-shadow: 0 4px 4px 0 var(--grey-opacity-15),
+  }
+  .subscribe-input::placeholder {
+    color: var(--white);
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 4px;
+    padding: 8px 0 8px 16px;
+
+  }
+  .subscribe-label {
+    display: flex;
+    flex-direction: column;
+    color: var(--white);
+    margin-bottom: 25px;
+  }
   .btn-subscribe {
     width: 165px;
     height: 40px;
-    display: inline-block;
-    text-align: center;
+    display: inline-flex;
+    align-items: center;
     justify-items:  center;
     line-height: 24px;
     padding: 8px 24px;
@@ -427,13 +456,12 @@
     border: none;
     border-radius: 4px;
     cursor: pointer;
-
+    margin-bottom: -16px;
   }
   .subscribe-svg {
-    fill: var(--white);
     margin-left: 16px;
-
   }
+
 
   /*modal*/
   .modal-overlay {
