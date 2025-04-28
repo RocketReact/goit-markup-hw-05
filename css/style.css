@@ -551,6 +551,7 @@ img {
   width: 360px;
   margin-top: 72px;
   margin-bottom: 16px;
+  text-align: center;
 }
 .textarea-modal {
   max-height: 120px;
