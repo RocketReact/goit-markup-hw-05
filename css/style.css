@@ -676,6 +676,9 @@ img {
   border: none;
   fill: var(--lightest-blue);
 }
+.user-privacy-input:focus {
+  border-color: var(--blue)
+}
 
 .checkbox-svg {
   fill: transparent;
