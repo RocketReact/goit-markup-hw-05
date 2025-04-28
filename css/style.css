@@ -582,8 +582,11 @@ img {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .input-modal:active,
-.input-modal:focus {
-  border-color: var(--blue);
+.input-modal:focus .input-wrapper {
+  border-color: var(--dark-light-blue);
+}
+.input-modal:focus .input-icon {
+  fill: var(--blue);
 }
 .input-icon {
   position: absolute;
@@ -632,7 +635,7 @@ img {
   resize: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.textarea-modal:focus {
+.textarea-modal:focus .input-comment {
   border-color: var(--blue);
 }
 .textarea-modal::placeholder {
@@ -656,15 +659,14 @@ img {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  fill: transparent;
   width: 16px;
   height: 16px;
   border: 1px solid var(--grey-opacity-40);
   border-radius: 2px;
   transition:
           background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-          border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-          fill: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+          border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+          fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 ;
 }
 
@@ -681,6 +683,7 @@ img {
   text-decoration: underline solid var(--blue);
   color: var(--blue);
 }
+
 .btn-form {
   display: block;
   min-width: 169px;
@@ -695,4 +698,13 @@ img {
   background-color: var(--blue);
   border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn-form:hover,  .btn-form:focus {
+  background-color: var(--dark-light-blue);
+  border: none;
+}
+.btn-form:hover .modal-close,
+.btn-form:focus .modal-close
+{
+  fill: var(--white);
 }
