@@ -591,6 +591,7 @@ img {
   fill: var(--blue);
 }
 .input-icon {
+  fill: var(--black);
   position: absolute;
   top: 50%;
   left: 16px;
@@ -635,7 +636,7 @@ img {
   resize: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.textarea-modal:focus .input-comment {
+.input-comment:focus-within .textarea-modal {
   border-color: var(--blue);
 }
 .textarea-modal::placeholder {
@@ -656,6 +657,7 @@ img {
   color: var(--middle-grey);
 }
 .span-checkbox-svg {
+  fill: transparent;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -669,7 +671,7 @@ img {
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.user-privacy-input:checked .span-checkbox-svg {
+.user-privacy-input:checked + .checkbox-label .span-checkbox-svg {
   background-color: var(--dark-light-blue);
   border: none;
   fill: var(--lightest-blue);
