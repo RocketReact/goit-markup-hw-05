@@ -671,24 +671,23 @@ img {
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+
 .user-privacy-input:checked + .checkbox-label .span-checkbox-svg {
   background-color: var(--dark-light-blue);
   border: none;
   fill: var(--lightest-blue);
 }
 .user-privacy-input:focus +  .checkbox-label .span-checkbox-svg  {
-  border-color: var(--blue)
+  border: 1 px solid var(--blue);
 }
 
 .checkbox-svg {
   fill: transparent;
 }
-
 .privacy-policy-link {
   text-decoration: underline solid var(--blue);
   color: var(--blue);
 }
-
 .btn-form {
   display: block;
   margin: 0 auto;
