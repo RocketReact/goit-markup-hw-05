@@ -429,10 +429,9 @@ img {
 }
 .subscribe-form {
   display: flex;
-}
-.subscribe-label {
   gap: 24px;
 }
+
 
 .subscribe-input {
   width: 264px;
@@ -459,7 +458,7 @@ img {
   height: 40px;
   display: flex;
   align-items: center;
-  justify-items: center;
+  justify-content: center;
   font-family: Roboto, sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -470,7 +469,6 @@ img {
   background-color: var(--blue);
   border: none;
   border-radius: 4px;
-  padding: 8px 24px;
 }
 .subscribe-svg {
   margin-left: 16px;
