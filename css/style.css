@@ -678,7 +678,7 @@ img {
   fill: var(--lightest-blue);
 }
 .user-privacy-input:focus +  .checkbox-label .span-checkbox-svg  {
-  border: 1px solid var(--blue);
+  border-color: var(--blue);
 }
 
 .checkbox-svg {
